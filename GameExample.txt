@@ -1,0 +1,65 @@
+!Start
+-Choose your class
++Warrior|@goto:Warrior_Intro
++Mage|goto:Mage_Intro
++Thief|goto:Thief_Intro
+
+!Warrior_Intro
+-Another stupid warrior.
+-What do you want? My treasure?
++Yes|goto:Warrior_1
++No|goto:End
+
+!Warrior_1
+-Then prove your might!
+-Will you fight your way through my dungeon?
++Yes|goto:Warrior_2
++No|goto:End
+
+!Warrior_2
+-First, you must fight my Goblins!
++Attack|goto:Warrior_3
++Flee|goto:End
+
+!Warrior_3
+-You are victorious!
+-But you are lightly wounded.
++Continue|goto:Warrior_4
++Return|goto:End
+
+!Warrior_4
+-Well done. You defeated a tiny little goblin.
++Continue|goto:Warrior_5
+
+!Warrior_5
+-How about, a Dragon!
++Sure|goto:Warrior_6
++Nope|goto:End
+
+!Warrior_6
+-You died, idiot!
++Quit|goto:End
+
+!Mage_Intro
+-A mage! Like myself!
++Okay...|goto:End
+
+!Thief_Intro
+-Do not think of stealing my treasures, thief!
++I won't|goto:Thief_1
+
+!Thief_1
+-Oh, you sneaky son of a bitch!
+-Let's see if you can sneak past my shit.
++Okay|goto:Thief_2
++Nah|goto:End
+
+!Thief_2
+-Well, shit son
++Bye|goto:End
+
+!End
+-Thanks for playing!
+-How about another go?
++Yes|goto:Start
++No|goto:Start

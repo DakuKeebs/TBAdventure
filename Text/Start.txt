@@ -1,0 +1,5 @@
+!Start
+-Choose your class
++Warrior|goto:Warrior>Start
++Mage|goto:Mage>Start
++Thief|goto:Thief>Start
